@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анатолий Садовский](https://up.htmlacademy.ru/adaptive/9/user/244373).
-* Наставник: `Неизвестно`.
+* Наставник: Ирина Соколовская.
 
 ---
 
