@@ -11,7 +11,7 @@
   <header class="page-header">
     <nav class="mobile-menu mobile-menu--closed mobile-menu--nojs">
       <div class="mobile-menu__wrapper">
-        <button class="mobile-menu__wrapper--close" type="button" title="Закрыть">Закрыть</button>
+        <button class="mobile-menu__close" type="button" title="Закрыть">Закрыть</button>
         <ul class="mobile-menu__items">
           <li class="mobile-menu__item"><a href="index.html">ГЛАВНАЯ</a></li>
           <li class="mobile-menu__item"><a href="photo.html">ФОТО И ВИДЕО</a></li>
@@ -21,23 +21,23 @@
       </div>
     </nav>
     <div class="top-menu">
-      <div class="top-menu--logo">
+      <div class="top-menu__logo">
         <img src="img/logotype-mobile.svg" width="100" height="100" alt="logotype-mobile">
       </div>
-      <button class="top-menu--menu" type="button" title="Меню">Меню</button>
+      <button class="top-menu__button" type="button" title="Меню">Меню</button>
     </div>
   </header>
   <main>
     <div clas="intro-additional">
-      <div class="intro-additional--background">
+      <div class="intro-additional__background">
         <img src="img/back-mobile.jpg" width="100" height="100" alt="back-mobile">
       </div>
-      <div class="intro-additional--text-photo">
+      <div class="intro-additional__text-photo">
         <img src="img/photo.svg" width="100" height="100" alt="text-index">
       </div>
-      <div class="intro-main--left-triangle">
+      <div class="intro-main__left-triangle">
       </div>
-      <div class="intro-main--right-triangle">
+      <div class="intro-main__right-triangle">
       </div>
     </div>
     <div class="photo-title">
@@ -45,68 +45,68 @@
       <p>НЕ МОЖЕТЕ РЕШИТЬСЯ НА ПУТЕШЕСТВИЕ ИЗ-ЗА КУРСА? ФОТОГРАФИИ ПОМОГУТ ВАМ ЗАБЫТЬ О ПОЛИТИКЕ И ЭКОНОМИКЕ</p>
     </div>
     <article class="main-page">
-      <section class="main-page__photo-section">
-        <div class="main-page__photo-section--photo">
+      <div class="photo-item">
+        <div class="photo-item__photo">
           <img src="img/photo-1.jpg" width="100" height="100" alt="НАРОДНЫЕ ПРОСТОРЫ">
         </div>
         <h3>НАРОДНЫЕ ПРОСТОРЫ</h3>
-        <p class="autor">Автор фото: Борис</p>
-        <p class="likes">1350</p>
-      </section>
-      <section class="main-page__photo-section">
-        <div class="main-page__photo-section--photo">
+        <p class="photo-item__autor">Автор фото: Борис</p>
+        <p class="photo-item__likes">1350</p>
+      </div>
+      <div class="photo-item">
+        <div class="photo-item__photo">
           <img src="img/photo-2.jpg" width="100" height="100" alt="МЕСТНАЯ РАСТИТЕЛЬНОСТЬ">
         </div>
         <h3>МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</h3>
-        <p class="autor">Автор фото: Сергей</p>
-        <p class="likes">143</p>
-      </section>
-      <section class="main-page__photo-section">
-        <div class="main-page__photo-section--photo">
+        <p class="photo-item__autor">Автор фото: Сергей</p>
+        <p class="photo-item__likes">143</p>
+      </div>
+      <div class="photo-item">
+        <div class="photo-item__photo">
           <img src="img/photo-3.jpg" width="100" height="100" alt="ДОРОГА НА СЕВЕР">
         </div>
         <h3>ДОРОГА НА СЕВЕР</h3>
-        <p class="autor">Автор фото: Петр</p>
-        <p class="likes">96</p>
-      </section>
-      <section class="main-page__photo-section">
-        <div class="main-page__photo-section--photo">
+        <p class="photo-item__autor">Автор фото: Петр</p>
+        <p class="photo-item__likes">96</p>
+      </div>
+      <div class="photo-item">
+        <div class="photo-item__photo">
           <img src="img/photo-4.jpg" width="100" height="100" alt="МОСТ ДЬЯВОЛА">
         </div>
         <h3>МОСТ ДЬЯВОЛА</h3>
-        <p class="autor">Автор фото: Антон</p>
-        <p class="likes">254</p>
-      </section>
-      <section class="main-page__section white-section">
+        <p class="photo-item__autor">Автор фото: Антон</p>
+        <p class="photo-item__likes">254</p>
+      </div>
+      <section class="main-page__section main-page__section--white">
         <h2>ВСЕ ЕЩЕ СОМНЕВАЕТЕСЬ?</h2>
         <p>СМОТРИТЕ ВИДЕОПРЕЗЕНТАЦИЮ И СКОРЕЕ ЗА БИЛЕТАМИ, ПОКА ОНИ НЕ ПОДОРОЖАЛИ В ОЧЕРЕДНОЙ РАЗ!</p>
-        <a class="btn btn-hotelbook" href="#">Предложение гостиниц</a>
+        <a class="btn btn--hotelbook" href="#">Предложение гостиниц</a>
       </section>
-      <div class="photo-page__video">
+      <div class="video">
         <video src="img/video-1.mp4" type="video/mp4" preload="metadata" width="320px" height="200px">
-          <div class="photo-page__video-controls">
-            <div class="photo-page__video-controls--progress">
+          <div class="video__controls">
+            <div class="video__controls--progress">
             </div>
-            <div class="photo-page__video-controls--replay">
+            <div class="video__controls--replay">
             </div>
-            <div class="photo-page__video-controls--cc">
+            <div class="video__controls--cc">
             </div>
-            <div class="photo-page__video-controls--fullscreen">
+            <div class="video__controls--fullscreen">
             </div>
           </div>
       </div>
     </article>
   </main>
   <footer class="page-footer">
-    <a class="page-footer--hash" href="#">#VISITSEDONA</a>
-    <p class="page-footer__social">
+    <a class="page-footer__hash" href="#">#VISITSEDONA</a>
+    <div class="page-footer__social"></div>
       <span class="social-links">
         <a class="social-link social-link--vk" href="#"></a>
         <a class="social-link social-link--fb" href="#"></a>
         <a class="social-link social-link--yt" href="#"></a>
       </span>
     </p>
-    <p class="page-footer__copyright">
+    <div class="page-footer__copyright"></div>
       РАЗРАБОТАНО
       <a class="page-footer__copyright-link">
     </p>

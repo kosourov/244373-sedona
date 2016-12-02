@@ -11,7 +11,7 @@
   <header class="page-header">
     <nav class="mobile-menu mobile-menu--closed mobile-menu--nojs">
       <div class="mobile-menu__wrapper">
-        <button class="mobile-menu__wrapper--close" type="button" title="Закрыть">Закрыть</button>
+        <button class="mobile-menu__close" type="button" title="Закрыть">Закрыть</button>
         <ul class="mobile-menu__items">
           <li class="mobile-menu__item"><a href="index.html">ГЛАВНАЯ</a></li>
           <li class="mobile-menu__item"><a href="photo.html">ФОТО И ВИДЕО</a></li>
@@ -21,23 +21,23 @@
       </div>
     </nav>
     <div class="top-menu">
-      <div class="top-menu--logo">
+      <div class="top-menu__logo">
         <img src="img/logotype-mobile.svg" width="100" height="100" alt="logotype-mobile">
       </div>
-      <button class="top-menu--menu" type="button" title="Меню">Меню</button>
+      <button class="top-menu__button" type="button" title="Меню">Меню</button>
     </div>
   </header>
   <main>
     <div clas="intro-additional">
-      <div class="intro-additional--background">
+      <div class="intro-additional__background">
         <img src="img/back-mobile.jpg" width="100" height="100" alt="back-mobile">
       </div>
       <div class="intro-additional--text-photo">
         <img src="img/photo.svg" width="100" height="100" alt="text-index">
       </div>
-      <div class="intro-main--left-triangle">
+      <div class="intro-main__left-triangle">
       </div>
-      <div class="intro-main--right-triangle">
+      <div class="intro-main__right-triangle">
       </div>
     </div>
     <div class="form-title">
@@ -48,25 +48,25 @@
       <section class="main-page__section white-section">
         <h2>ПРЕДСТАВЬТЕСЬ:</h2>
         <div class="name-form">
-          <input class="name-form--window" name="name" id="name" type="text" placeholder="Петр" required>
+          <input class="name-form__window" name="name" id="name" type="text" placeholder="Петр" required>
           <label for="name">ИМЯ*:</label>
         </div>
-        <div class="surname-form">
+        <div class="name-form">
           <input class="surname-form--window" name="surname" id="surname" type="text" placeholder="Иванов" required>
           <label for="surname">ФАМИЛИЯ*:</label>
         </div>
-        <div class="middle-name-form">
+        <div class="name-form">
           <input class="middle-name-form--window" name="middle-name" id="middle-name" type="text" placeholder="Александрович" required>
           <label for="middle-name">ОТЧЕСТВО*:</label>
         </div>
       </section>
       <section class="main-page__section white-section">
         <h2>КОНТКТНАЯ ИНФОРМАЦИЯ:</h2>
-        <div class="phone-form">
+        <div class="contact-form">
           <input class="phone-form--window" name="phone" id="phone" type="tel" placeholder="Введите телефон" required>
           <label for="phone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
         </div>
-        <div class="email-form">
+        <div class="contact-form">
           <input class="email-form--window" name="email" id="email" type="email" placeholder="Введите e-mail" required>
           <label for="email">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
         </div>
@@ -74,25 +74,25 @@
       <section class="main-page__section white-section">
         <h2>ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h2>
         <div class="radio-form">
-          <input name="radio-form" id="good" type="radio" value="good" checked>
-          <label for="good">Скорее положительное</label>
-          <input name="radio-form" id="bad" type="radio" value="bad">
-          <label for="bad">Скорее отрицательное</label>
-          <input name="radio-form" id="no-answer" type="radio" value="no-answer">
-          <label for="no-answer">Затрудняюсь ответить</label>
+          <input class="good" name="radio-form" id="good" type="radio" value="good" checked>
+          <label class="good" for="good">Скорее положительное</label>
+          <input class="bad" name="radio-form" id="bad" type="radio" value="bad">
+          <label class="bad" for="bad">Скорее отрицательное</label>
+          <input class="no-answer" name="radio-form" id="no-answer" type="radio" value="no-answer">
+          <label class="no-answer" for="no-answer">Затрудняюсь ответить</label>
         </div>
       </section>
       <section class="main-page__section white-section">
         <h2>ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</h2>
         <div class="checkbox-form">
-          <input type="checkbox" name="attractions" value="bridge" id="bridge">
-          <label for="bridge">Мост Дьявола</label>
-          <input type="checkbox" name="attractions" value="slidepark" id="slidepark">
-          <label for="slidepark">Слайд-парк</label>
-          <input type="checkbox" name="attractions" value="mountain" id="mountain">
-          <label for="mountain">Гора-Колокол</label>
-          <input type="checkbox" name="attractions" value="redrocks" id="redrocks">
-          <label for="redrocks">Красные скалы</label>
+          <input class="attractions" type="checkbox" name="attractions" value="bridge" id="bridge">
+          <label class="attractions" for="bridge">Мост Дьявола</label>
+          <input class="slidepark" type="checkbox" name="attractions" value="slidepark" id="slidepark">
+          <label class="slidepark" for="slidepark">Слайд-парк</label>
+          <input class="mountain" type="checkbox" name="attractions" value="mountain" id="mountain">
+          <label class="mountain" for="mountain">Гора-Колокол</label>
+          <input class="redrocks" type="checkbox" name="attractions" value="redrocks" id="redrocks">
+          <label class="redrocks" for="redrocks">Красные скалы</label>
         </div>
       </section>
       <section class="main-page__section white-section">
@@ -105,18 +105,18 @@
     </article>
   </main>
   <footer class="page-footer">
-    <a class="page-footer--hash" href="#">#VISITSEDONA</a>
-    <p class="page-footer__social">
-      <span class="social-links">
+    <a class="page-footer__hash" href="#">#VISITSEDONA</a>
+    <div class="page-footer__social"></div>
+    <span class="social-links">
         <a class="social-link social-link--vk" href="#"></a>
         <a class="social-link social-link--fb" href="#"></a>
         <a class="social-link social-link--yt" href="#"></a>
       </span>
     </p>
-    <p class="page-footer__copyright">
-      РАЗРАБОТАНО
-      <a class="page-footer__copyright-link">
-    </p>
+    <div class="page-footer__copyright"></div>
+    РАЗРАБОТАНО
+    <a class="page-footer__copyright-link">
+      </p>
   </footer>
 </body>
 
