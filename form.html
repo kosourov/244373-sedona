@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="mobile-menu mobile-menu--closed mobile-menu--nojs">
+      <div class="mobile-menu__wrapper">
+        <button class="mobile-menu__close" type="button" title="Закрыть">Закрыть</button>
+        <ul class="mobile-menu__items">
+          <li class="mobile-menu__item"><a href="index.html">ГЛАВНАЯ</a></li>
+          <li class="mobile-menu__item"><a href="photo.html">ФОТО И ВИДЕО</a></li>
+          <li class="mobile-menu__item"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
+          <li class="mobile-menu__item"><a href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="top-menu">
+      <div class="top-menu__logo">
+        <img src="img/logotype-mobile.svg" width="100" height="100" alt="logotype-mobile">
+      </div>
+      <button class="top-menu__button" type="button" title="Меню">Меню</button>
+    </div>
+  </header>
+  <main>
+    <div clas="intro-additional">
+      <div class="intro-additional__background">
+        <img src="img/back-mobile.jpg" width="100" height="100" alt="back-mobile">
+      </div>
+      <div class="intro-additional--text-photo">
+        <img src="img/photo.svg" width="100" height="100" alt="text-index">
+      </div>
+      <div class="intro-main__left-triangle">
+      </div>
+      <div class="intro-main__right-triangle">
+      </div>
+    </div>
+    <div class="form-title">
+      <h2>ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
+      <p>ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
+    </div>
+    <article class="main-page">
+      <section class="main-page__section white-section">
+        <h2>ПРЕДСТАВЬТЕСЬ:</h2>
+        <div class="name-form">
+          <input class="name-form__window" name="name" id="name" type="text" placeholder="Петр" required>
+          <label for="name">ИМЯ*:</label>
+        </div>
+        <div class="name-form">
+          <input class="surname-form--window" name="surname" id="surname" type="text" placeholder="Иванов" required>
+          <label for="surname">ФАМИЛИЯ*:</label>
+        </div>
+        <div class="name-form">
+          <input class="middle-name-form--window" name="middle-name" id="middle-name" type="text" placeholder="Александрович" required>
+          <label for="middle-name">ОТЧЕСТВО*:</label>
+        </div>
+      </section>
+      <section class="main-page__section white-section">
+        <h2>КОНТКТНАЯ ИНФОРМАЦИЯ:</h2>
+        <div class="contact-form">
+          <input class="phone-form--window" name="phone" id="phone" type="tel" placeholder="Введите телефон" required>
+          <label for="phone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
+        </div>
+        <div class="contact-form">
+          <input class="email-form--window" name="email" id="email" type="email" placeholder="Введите e-mail" required>
+          <label for="email">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
+        </div>
+      </section>
+      <section class="main-page__section white-section">
+        <h2>ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h2>
+        <div class="radio-form">
+          <input class="good" name="radio-form" id="good" type="radio" value="good" checked>
+          <label class="good" for="good">Скорее положительное</label>
+          <input class="bad" name="radio-form" id="bad" type="radio" value="bad">
+          <label class="bad" for="bad">Скорее отрицательное</label>
+          <input class="no-answer" name="radio-form" id="no-answer" type="radio" value="no-answer">
+          <label class="no-answer" for="no-answer">Затрудняюсь ответить</label>
+        </div>
+      </section>
+      <section class="main-page__section white-section">
+        <h2>ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</h2>
+        <div class="checkbox-form">
+          <input class="attractions" type="checkbox" name="attractions" value="bridge" id="bridge">
+          <label class="attractions" for="bridge">Мост Дьявола</label>
+          <input class="slidepark" type="checkbox" name="attractions" value="slidepark" id="slidepark">
+          <label class="slidepark" for="slidepark">Слайд-парк</label>
+          <input class="mountain" type="checkbox" name="attractions" value="mountain" id="mountain">
+          <label class="mountain" for="mountain">Гора-Колокол</label>
+          <input class="redrocks" type="checkbox" name="attractions" value="redrocks" id="redrocks">
+          <label class="redrocks" for="redrocks">Красные скалы</label>
+        </div>
+      </section>
+      <section class="main-page__section white-section">
+        <h2>ОПИШИТЕ СВОИ ЭМОЦИИ:</h2>
+        <div class="text-form">
+          <textarea name="emotions" id="emotions" rows="5">Опишите подробно все свои восторги</textarea>
+        </div>
+        <button class="btn-form" type="submit" value="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+      </section>
+    </article>
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__hash" href="#">#VISITSEDONA</a>
+    <div class="page-footer__social"></div>
+    <span class="social-links">
+        <a class="social-link social-link--vk" href="#"></a>
+        <a class="social-link social-link--fb" href="#"></a>
+        <a class="social-link social-link--yt" href="#"></a>
+      </span>
+    </p>
+    <div class="page-footer__copyright"></div>
+    РАЗРАБОТАНО
+    <a class="page-footer__copyright-link">
+      </p>
+  </footer>
+</body>
+
+</html>
