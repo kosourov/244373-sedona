@@ -727,21 +727,239 @@ p {
   text-align: left;
   height: 58px;
   margin-left: 20px;
-  @@include outline-red;
 }
 
 .name-form__window {
-height: 58px;
+float: right;
+height: 60px;
 margin-right: 20px;
 margin-top: 20px;
+font-weight: bold;
 background-color: #f2f2f2;
-border-style: none;
+border: none;
 color: $body-color;
+padding-left: 20px;
+&:hover {
+ background-color: #e5e5e5;
+}
+&:focus {
+	background-color: #ffffff;
+	outline: 4px solid #e5e5e5;
+}
 }
 
+.name-form__window:hover {
+ background-color: #e5e5e5;
+}
+
+.name-form__window:focus {
+	background-color: #ffffff;
+	outline: 4px solid #e5e5e5;
+}
+
+.contact-form__label {
+  display: block;
+  float: left;
+  font-size: 14px;
+  line-height: 26px;
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+
 .contact-form__window {
-  height: 58px;
-  background-color: #f2f2f2;
-  border-style: none;
-  color: $body-color;
+  float: left;
+  height: 60px;
+	width: 210px;
+	padding-left: 20px;
+  margin-left: 20px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	background-color: #f2f2f2;
+	border: none;
+  &:hover {
+   background-color: #e5e5e5;
+  }
+  &:focus {
+  	background-color: #ffffff;
+  	outline: 4px solid #e5e5e5;
+  }
+}
+
+.logo-phone,
+.logo-email {
+	height: 60px;
+	width: 70px;
+  float: right;
+  margin-right: 20px;
+}
+
+.logo-phone {
+	background: url("../img/icon-phone.svg") no-repeat 50%;
+	background-color: #e6e6e6;
+}
+
+.logo-email {
+	background: url("../img/icon-mail.svg") no-repeat 50%;
+	background-color: #e6e6e6;
+}
+
+.radio + label {
+	display: block;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  width: 250px;
+  text-align: center;
+}
+
+.radio__label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+
+.radio:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+
+.radio:not(checked) + label {
+  position: relative;
+  padding: 20px 0;
+  padding-left: 60px;
+}
+
+.radio:not(checked) + label::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #f2f2f2;
+}
+
+.radio:not(checked) + label:hover::before {
+	background-color: #e5e5e5;
+}
+
+.radio:not(checked) + label:active::before {
+	background-color: #d5d5d5;
+}
+
+
+.radio:not(checked) + label::after {
+  content: '';
+  position: absolute;
+  top: 22px;
+  left: 27px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #333333;
+  opacity: 0;
+}
+
+.radio:checked + label::after {
+  opacity: 1;
+}
+
+.checkbox + label {
+	display: inline-block;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 220px;
+  margin-left: -7px;
+}
+
+.checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox:not(checked) + label {
+  position: relative;
+  padding: 20px;
+  padding-left: 80px;
+}
+
+.checkbox:not(checked) + label::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 30px;
+  width: 55px;
+  height: 55px;
+  border-radius: 15%;
+  background: #f2f2f2;
+}
+
+.checkbox:not(checked) + label:hover::before {
+	background-color: #e5e5e5;
+}
+
+.checkbox:not(checked) + label:active::before {
+	background-color: #d5d5d5;
+}
+
+.checkbox:not(checked) + label::after {
+  content: '';
+  position: absolute;
+  top: 22px;
+  left: 46px;
+  width: 25px;
+  height: 20px;
+  border-radius: 20%;
+  background: url("../img/icon-tick.svg") no-repeat;
+  opacity: 0;
+}
+
+.checkbox:checked + label::after {
+  opacity: 1;
+}
+
+.checkbox__label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text-form textarea {
+	height: 160px;
+  width: 280px;
+	padding: 20px;
+  margin-left: 20px;
+  margin-top: 25px;
+	margin-bottom: 20px;
+	font-weight: bold;
+	border: none;
+	background-color: #f2f2f2;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.btn-form {
+  display: block;
+  height: 60px;
+  width: 280px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  padding-top: 5px;
+  margin-top: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  color: $mobile-menu-link-color;
+  background-color: $main-bg-blue;
+  border: none;
 }

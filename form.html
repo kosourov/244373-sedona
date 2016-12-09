@@ -62,36 +62,39 @@
       <section class="form-item">
         <h2>КОНТКТНАЯ ИНФОРМАЦИЯ:</h2>
         <div class="contact-form">
+          <label class="contact-form__label" for="phone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
           <input class="contact-form__window" name="phone" id="phone" type="tel" placeholder="Введите телефон" required>
-          <label for="phone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
+          <div class="logo-phone"></div>
+
         </div>
-        <div class="contact-form">
+        <div class="contact-form clearfix">
+          <label class="contact-form__label" for="email">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
           <input class="contact-form__window" name="email" id="email" type="email" placeholder="Введите e-mail" required>
-          <label for="email">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
+          <div class="logo-email"></div>
         </div>
       </section>
       <section class="form-item">
         <h2>ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h2>
-        <div class="radio-form">
-          <input class="good" name="radio-form" id="good" type="radio" value="good" checked>
-          <label class="good" for="good">Скорее положительное</label>
-          <input class="bad" name="radio-form" id="bad" type="radio" value="bad">
-          <label class="bad" for="bad">Скорее отрицательное</label>
-          <input class="no-answer" name="radio-form" id="no-answer" type="radio" value="no-answer">
-          <label class="no-answer" for="no-answer">Затрудняюсь ответить</label>
+        <div class="radio-form clearfix">
+          <input class="radio" name="radio-form" id="good" type="radio" value="good" checked>
+          <label class="radio__label" for="good">Скорее положительное</label>
+          <input class="radio" name="radio-form" id="bad" type="radio" value="bad">
+          <label class="radio__label" for="bad">Скорее отрицательное</label>
+          <input class="radio" name="radio-form" id="no-answer" type="radio" value="no-answer">
+          <label class="radio__label" for="no-answer">Затрудняюсь ответить</label>
         </div>
       </section>
       <section class="form-item">
         <h2>ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</h2>
-        <div class="checkbox-form">
-          <input class="attractions" type="checkbox" name="attractions" value="bridge" id="bridge">
-          <label class="attractions" for="bridge">Мост Дьявола</label>
-          <input class="slidepark" type="checkbox" name="attractions" value="slidepark" id="slidepark">
-          <label class="slidepark" for="slidepark">Слайд-парк</label>
-          <input class="mountain" type="checkbox" name="attractions" value="mountain" id="mountain">
-          <label class="mountain" for="mountain">Гора-Колокол</label>
-          <input class="redrocks" type="checkbox" name="attractions" value="redrocks" id="redrocks">
-          <label class="redrocks" for="redrocks">Красные скалы</label>
+        <div class="checkbox-form clearfix">
+          <input class="checkbox" type="checkbox" name="attractions" value="bridge" id="bridge">
+          <label class="checkbox__label" for="bridge">Мост Дьявола</label>
+          <input class="checkbox" type="checkbox" name="attractions" value="slidepark" id="slidepark">
+          <label class="checkbox__label" for="slidepark">Слайд-парк</label>
+          <input class="checkbox" type="checkbox" name="attractions" value="mountain" id="mountain">
+          <label class="checkbox__label" for="mountain">Гора-Колокол</label>
+          <input class="checkbox" type="checkbox" name="attractions" value="redrocks" id="redrocks">
+          <label class="checkbox__label" for="redrocks">Красные скалы</label>
         </div>
       </section>
       <section class="form-item">
