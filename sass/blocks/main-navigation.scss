@@ -1,0 +1,118 @@
+.main-navigation {
+}
+
+.main-navigation__list {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation__item {
+  text-align: center;
+  min-height: 55px;
+  background-color: $sedona-blue;
+  border-bottom: 1px solid #678fa8;
+}
+
+.main-navigation__item:not(:first-child) {
+  border-top: 1px solid #9ac2db;
+}
+
+.main-navigation__item:last-child {
+  box-shadow: inset 0 -5px 9px -8px #000000;
+}
+
+.main-navigation__item:hover {
+  background-color: #669ec0;
+}
+
+.main-navigation__item:active {
+  background-color: #5496bd;
+}
+
+.main-navigation__item:active a {
+  color: #84b4d0;
+}
+
+.main-navigation__item a {
+  display: block;
+  @include font-control(18px, 40px, 700);
+  padding: 7px 75px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-navigation__item button {
+  display: block;
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  top: 0;
+  right: 0;
+}
+
+@media #{$tablet-width} {
+  .main-navigation {
+    padding: 0;
+  }
+
+  .main-navigation__list {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .main-navigation__item {
+    background-color: #ffffff;
+    flex-basis: 20%;
+    border-bottom: none;
+  }
+  .main-navigation__item:not(:first-child) {
+    border: none;
+  }
+  .main-navigation__item:nth-child(2) {
+    margin-right: auto;
+
+  }
+
+  .main-navigation__item a,
+  .main-navigation__item a[href] {
+    @include font-control(14px, 40px, 700);
+    color: #000000;
+    background-color: #ffffff;
+    padding: 0;
+  }
+
+  .main-navigation__item:hover a[href] {
+    color: #9ac2db;
+  }
+
+  .main-navigation__item:active a[href] {
+    color: #eaeaea;
+  }
+
+  .main-navigation__item a {
+    color: #9b8d84;
+  }
+
+  .main-navigation__item:hover a {
+    color: #604e43;
+  }
+
+  .main-navigation__item:active a {
+    color: #d6d0cc;
+  }
+
+  .main-navigation__item button {
+    display: none;
+  }
+}
+
+@media #{$tablet-width} {
+  .main-navigation__item a,
+  .main-navigation__item a[href]{
+    min-height: 50px;
+    padding-top: 9px;
+  }
+}

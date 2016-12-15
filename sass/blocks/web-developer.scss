@@ -1,0 +1,34 @@
+.web-developer {
+  text-align: center;
+  padding-top: 00px;
+  margin-bottom: 30px;
+}
+
+.web-developer:hover path {
+  fill: $sedona-blue-hover;
+}
+
+.web-developer:active path {
+  fill: #b2b2b2;
+}
+
+.web-developer a {
+  @include font-control(14px, 26px, 300);
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #000000;
+}
+
+.web-developer svg {
+  display: inline-block;
+  vertical-align: top;
+  width: 40px;
+  height: 40px;
+}
+
+@media #{$tablet-width} {
+  .web-developer {
+    padding-top: 40px;
+  }
+}

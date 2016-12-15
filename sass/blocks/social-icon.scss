@@ -1,0 +1,23 @@
+.social-icon {
+  height: 46px;
+  width: 46px;
+  margin: 0 2px;
+  display: flex;
+  background-color: $sedona-blue;
+}
+
+.social-icon svg {
+  margin: auto;
+}
+
+.social-icon:hover {
+  background-color: $sedona-blue-hover;
+}
+
+.social-icon:active {
+  background-color: $sedona-blue-active;
+}
+
+.social-icon:active path {
+  fill: $sedona-blue-content-active;
+}

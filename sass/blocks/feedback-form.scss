@@ -1,0 +1,743 @@
+.feedback-form {
+  width: 280px;
+  padding: 0 20px;
+  margin-bottom: 70px;
+}
+
+.feedback-form input {
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+.feedback-form input::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.feedback-form input:-moz-placeholder {
+  color: #000000;
+}
+
+.feedback-form textarea::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.feedback-form textarea:-moz-placeholder {
+  color: #000000;
+}
+
+.feedback-form textarea {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+}
+
+.feedback-form fieldset {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+.feedback-form fieldset::before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 320px;
+  height: 1px;
+  top: -20px;
+  left: -20px;
+  background-color: #e5e5e5;
+}
+
+.feedback-form fieldset:last-child::before {
+  display: none;
+}
+
+.feedback-form form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feedback-form legend {
+  margin: 0;
+  padding: 0;
+}
+
+.feedback-form__name {
+  box-sizing: border-box;
+  width: 320px;
+  min-height: 305px;
+}
+
+.feedback-form__name legend {
+  @include font-control(18px, 26px, 700);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feedback-form__name label {
+  @include font-control(14px, 26px, 300);
+  display: inline-block;
+  vertical-align: baseline;
+  min-height: 50px;
+}
+
+.feedback-form__name input:first-of-type {
+  width: 228px;
+  margin-bottom: 20px;
+}
+
+.feedback-form__name input {
+  @include font-control(18px, 26px, 700);
+  margin-left: 15px;
+  margin-bottom: 15px;
+  min-height: 60px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  width: 193px;
+  text-transform: none;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.feedback-form__contacts {
+  position: relative;
+  box-sizing: border-box;
+  width: 320px;
+  min-height: 315px;
+}
+
+.feedback-form__contacts legend {
+  @include font-control(18px, 26px, 700);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feedback-form__contacts label {
+  @include font-control(14px, 26px, 300);
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 20px;
+  margin-bottom: 5px;
+}
+
+.feedback-form__contacts input {
+  @include font-control(18px, 26px, 700);
+  text-transform: none;
+  min-height: 60px;
+  padding-left: 20px;
+  width: 280px;
+  box-sizing: border-box;
+  margin-bottom: 45px;
+}
+
+
+
+.feedback-form__contacts input[type="tel"] {
+  background: right 20px top 20px url("../img/icon-phone.svg") no-repeat,
+  linear-gradient(270deg, #e6e6e6 0%, #e6e6e6 60px, #f2f2f2 60px, #f2f2f2 100%);
+}
+
+
+.feedback-form__contacts input[type="email"] {
+  background: right 20px top 20px url("../img/icon-mail.svg") no-repeat,
+  linear-gradient(270deg, #e6e6e6 0%, #e6e6e6 60px, #f2f2f2 60px, #f2f2f2 100%);
+}
+
+.feedback-form__error-phone {
+  position: absolute;
+  top: 140px;
+  left: 20px;
+  @include font-control(14px, 26px, 300);
+  display: inline-block;
+  vertical-align: top;
+  color: red;
+  text-transform: none;
+}
+
+.feedback-form__error-email {
+  position: absolute;
+  top: 275px;
+  left: 15px;
+  @include font-control(14px, 26px, 300);
+  display: inline-block;
+  vertical-align: top;
+  color: red;
+  text-transform: none;
+}
+
+.feedback-form__impression {
+  min-height: 290px;
+}
+
+.feedback-form__impression legend {
+  @include font-control(18px, 26px, 700);
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.feedback-form__impression label {
+  position: relative;
+  @include font-control(18px, 26px, 700);
+  text-transform: none;
+  display: block;
+  margin-bottom: 42px;
+  margin-left: 80px;
+  cursor: pointer;
+}
+
+.feedback-form__impression input {
+  display: none;
+}
+
+.feedback-form__impression label::before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 55px;
+  height: 55px;
+  left: -80px;
+  top: -15px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+
+input[name="impression"]:checked + label::after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 22px;
+  height: 22px;
+  left: -63px;
+  top: 2px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+.feedback-form__impression label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.feedback-form__impression label:active::before {
+  background-color: #d5d5d5;
+}
+
+input[name="impression"]:checked + label:active::after {
+  background-color: #a4a4a4;
+}
+
+
+.feedback-form__sights {
+  min-height: 405px;
+}
+
+.feedback-form__sights legend {
+  @include font-control(18px, 26px, 700);
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
+.feedback-form__sights input {
+  display: none;
+}
+
+.feedback-form__sights label {
+  @include font-control(18px, 26px, 700);
+  position: relative;
+  display: block;
+  text-transform: none;
+  margin-left: 80px;
+  margin-bottom: 53px;
+}
+
+.feedback-form__sights label::before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 55px;
+  height: 55px;
+  left: -80px;
+  top: -15px;
+  border-radius: 15%;
+  background-color: #f2f2f2;
+}
+
+input[name="sights-toggle"]:checked + label::after {
+  position: absolute;
+  content: '';
+  width: 17px;
+  height: 10px;
+  left: -62px;
+  top: 4px;
+  background-color: #f2f2f2;
+  border-left: 4px solid #000000;
+  border-bottom: 4px solid #000000;
+  transform: rotate(-45deg);
+}
+
+.feedback-form__sights label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.feedback-form__sights label:active::before {
+  background-color: #d5d5d5;
+}
+
+input[name="sights-toggle"]:checked + label:hover::after {
+  background-color: #e5e5e5;
+}
+
+input[name="sights-toggle"]:checked + label:active::after {
+  border-left: 4px solid #a4a4a4;
+  border-bottom: 4px solid #a4a4a4;
+  background-color: #d5d5d5;
+}
+
+.feedback-form__message {}
+
+.feedback-form__message legend {
+  @include font-control(18px, 26px, 700);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feedback-form__message textarea {
+  @include font-control(18px, 26px, 700);
+  box-sizing: border-box;
+  width: 280px;
+  margin-bottom: 45px;
+  padding: 15px;
+  min-height: 160px;
+  color: #000000;
+  text-transform: none;
+}
+
+
+.feedback-form input:hover,
+.feedback-form textarea:hover{
+  background-color: #e5e5e5;
+}
+
+.feedback-form input:active,
+.feedback-form textarea:active {
+  background-color: #ffffff;
+  outline: 3px solid #e5e5e5;
+}
+
+.feedback-form__notice {
+  display: none;
+}
+
+
+@media #{$tablet-width} {
+  .feedback-form {
+    width: 648px;
+    padding: 0 60px;
+    margin-bottom: 65px;
+  }
+
+  .feedback-form fieldset::before {
+    display: none;
+  }
+
+  .feedback-form__impression {
+    position: relative;
+    width: 324px;
+    order: 0;
+  }
+
+  .feedback-form__impression legend::before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 300px;
+    top: 0px;
+    right: 0px;
+    background-color: #e5e5e5;
+  }
+
+  .feedback-form__impression legend {
+    @include font-control(21px, 26px, 700);
+    text-align: left;
+    margin-bottom: 70px;
+  }
+
+  .feedback-form__impression label {
+    margin-bottom: 53px;
+  }
+
+  .feedback-form__name {
+    width: 324px;
+    order: 1;
+  }
+
+  .feedback-form__name span {
+    display: none;
+  }
+
+  .feedback-form__name legend {
+    @include font-control(21px, 26px, 700);
+    text-align: left;
+    margin-left: 60px;
+    margin-bottom: 55px;
+  }
+
+  .feedback-form__name label {
+    margin-left: 60px;
+  }
+
+  .feedback-form__name input:first-of-type {
+    width: 215px;
+    margin-bottom: 15px;
+  }
+
+  .feedback-form__name input {
+    width: 177px;
+    margin-bottom: 20px;
+  }
+
+  .feedback-form__contacts {
+    width: 648px;
+    order: 2;
+  }
+
+  .feedback-form__contacts legend {
+    @include font-control(21px, 26px, 700);
+    position: relative;
+    padding-top: 30px;
+    margin-bottom: 25px;
+    margin-left: 28%;
+  }
+
+  .feedback-form__contacts legend::before,
+  .feedback-form__contacts legend::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 1px;
+    top: 40px;
+    right: 340px;
+    background-color: #e5e5e5;
+  }
+
+  .feedback-form__contacts legend::after {
+    right: -180px;
+  }
+
+  .feedback-form__contacts input {
+    display: block;
+    margin-bottom: 25px;
+    width: 648px;
+  }
+
+  .feedback-form__sights {
+    width: 648px;
+    order: 3;
+    min-height: 330px;
+  }
+
+  .feedback-form__sights-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 175px;
+
+  }
+
+  .feedback-form__sights legend {
+    position: relative;
+    @include font-control(21px, 26px, 700);
+    padding: 25px 190px;
+    width: 275px;
+  }
+
+  .feedback-form__sights legend::before,
+  .feedback-form__sights legend::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 1px;
+    top: 50px;
+    right: 535px;
+    background-color: #e5e5e5;
+  }
+
+  .feedback-form__sights legend::after {
+    right: 10px;
+  }
+
+  .feedback-form__sights label {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 65px;
+    width: 130px;
+
+  }
+
+  .feedback-form__sights label[for="devil-bridge"] {
+    order: 1;
+  }
+
+  .feedback-form__sights label[for="bell-mountain"] {
+    order: 2;
+    margin-left: 130px;
+  }
+
+  .feedback-form__sights label[for="slide-park"] {
+    order: 3;
+  }
+
+  .feedback-form__sights label[for="red-rock"] {
+    order: 4;
+    margin-left: 130px;
+  }
+
+  .feedback-form__message {
+    width: 648px;
+    order: 4;
+  }
+
+  .feedback-form__message legend {
+    @include font-control(22px, 26px, 700);
+    position: relative;
+    margin-bottom: 55px;
+    width: 265px;
+    margin-left: 29%;
+  }
+
+  .feedback-form__message legend::before,
+  .feedback-form__message legend::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 1px;
+    top: 12px;
+    right: 335px;
+    background-color: #e5e5e5;
+  }
+
+  .feedback-form__message legend::after {
+    right: -190px;
+  }
+
+  .feedback-form__message textarea {
+    width: 648px;
+    padding: 20px;
+    margin-bottom: 55px;
+  }
+
+  .feedback-form__btn {
+    order: 5;
+    width: 100%;
+  }
+
+  .feedback-form__error-phone {
+    top: 80px;
+    left: 455px;
+  }
+
+  .feedback-form__error-email {
+    top: 200px;
+    left: 455px;
+  }
+
+  .feedback-form__notice {
+  display: block;
+  float: right;
+  padding-top: 20px;
+  vertical-align: baseline;
+  @include font-control(14px, 26px, 300);
+  text-transform: uppercase;
+}
+
+}
+
+
+@media #{$desktop-width} {
+  .feedback-form {
+    width: 960px;
+    padding: 0 120px;
+  }
+
+  .feedback-form__impression {
+    width: 480px;
+    min-height: 325px;
+  }
+
+
+  .feedback-form__impression legend {
+    @include font-control(21px, 26px, 700);
+    text-align: left;
+    padding-left: 80px;
+    margin-bottom: 75px;
+  }
+
+  .feedback-form__impression label {
+    margin-bottom: 53px;
+  }
+
+  .feedback-form__name {
+    width: 480px;
+
+  }
+
+  .feedback-form__name legend {
+    width: 480px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .feedback-form__name span {
+    display: inline;
+  }
+
+  .feedback-form__name label {
+    margin-left: 80px;
+  }
+
+  .feedback-form__name input:first-of-type {
+    width: 350px;
+    margin-bottom: 15px;
+  }
+
+  .feedback-form__name input {
+    margin-bottom: 20px;
+    margin-left: 15px;
+    width: 312px;
+  }
+
+  .feedback-form__contacts {
+    width: 960px;
+    min-height: 240px;
+  }
+
+  .feedback-form__contacts span {
+    display: none;
+  }
+
+  .feedback-form__contacts legend {
+    padding-bottom: 50px;
+    margin-bottom: 15px;
+    margin-left: 35%;
+  }
+
+
+  .feedback-form__contacts legend::before,
+  .feedback-form__contacts legend::after {
+    width: 280px;
+  }
+
+  .feedback-form__contacts legend::after {
+    right: -340px;
+  }
+
+  .feedback-form__contacts label {
+    display: inline-block;
+    vertical-align: baseline;
+    padding: 0;
+    width: 80px;
+  }
+  .feedback-form__contacts label:last-of-type {
+    width: auto;
+    margin-left: 7px;
+    margin-right: 20px;
+  }
+
+  .feedback-form__contacts input {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 320px;
+  }
+
+   .feedback-form__contacts input:first-of-type {
+    margin-right: 57px;
+  }
+
+  .feedback-form__sights {
+    width: 960px;
+    min-height: 215px;
+  }
+
+  .feedback-form__sights-wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 80px;
+  }
+
+  .feedback-form__sights label[for="bell-mountain"] {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .feedback-form__sights label[for="red-rock"] {
+    margin-left: -10px;
+    margin-right: -5px;
+  }
+
+  .feedback-form__sights legend {
+    padding: 0 340px;
+    text-align: center;
+    margin-bottom: 60px;
+    width: 280px;
+  }
+
+
+  .feedback-form__sights legend::before,
+  .feedback-form__sights legend::after {
+    width: 280px;
+    top: 25px;
+    right: 680px;
+  }
+
+  .feedback-form__sights legend::after {
+    right: 1px;
+  }
+
+  .feedback-form__message {
+    width: 960px;
+  }
+
+  .feedback-form__message legend {
+    margin-left: 40%;
+  }
+
+  .feedback-form__message textarea {
+    width: 960px;
+    margin-bottom: 55px;
+  }
+
+  .feedback-form__message legend::before,
+  .feedback-form__message legend::after {
+    width: 280px;
+    top: 12px;
+    right: 330px;
+  }
+
+  .feedback-form__message legend::after {
+    right: -345px;
+  }
+
+    .feedback-form__error-phone {
+    top: 95px;
+    left: 105px;
+  }
+
+  .feedback-form__error-email {
+    top: 95px;
+    left: 665px;
+  }
+
+  .feedback-form--btn {
+    width: 400px;
+  }
+}

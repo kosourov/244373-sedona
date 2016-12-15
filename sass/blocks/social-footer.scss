@@ -1,0 +1,11 @@
+.social-footer {
+  display: flex;
+  justify-content: center;
+  padding: 35px 0;
+}
+
+@media #{$desktop-width} {
+  .social-footer {
+    margin-right: 100px;
+  }
+}
