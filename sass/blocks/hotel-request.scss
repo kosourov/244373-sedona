@@ -5,7 +5,7 @@
   margin-bottom: 30px;
 }
 
-.hotel-request span {
+.hotel-request__header {
   @include font-control(21px, 26px, 700);
   display: inline-block;
   width: 320px;
@@ -30,7 +30,7 @@
     margin-bottom: 2px;
   }
 
-  .hotel-request span {
+  .hotel-request__header {
     @include font-control(30px, 26px, 700);
     padding-top: 25px;
     margin-bottom: 10px;
@@ -48,7 +48,7 @@
 }
 
 @media #{$desktop-width} {
-  .hotel-request span {
+  .hotel-request__header {
     width: 1200px;
   }
 

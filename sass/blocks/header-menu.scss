@@ -4,29 +4,8 @@
   background-color: $sedona-blue;
   background-size: cover;
   min-height: 445px;
-}
 
-.header-menu--content {
-  min-height: 215px;
-  background: 50% 100% url("../../img/bg-back-mobile@1x.jpg") no-repeat;
-  background-color: $sedona-blue;
-}
-
-@media #{$retina} {
-  .header-menu {
-    background: 60% 55px url("../img/bg-back-mobile@2x.jpg") no-repeat;
-    background-color: $sedona-blue;
-  }
-
-  .header-menu--content {
-    background: 55% 50% url("../img/bg-back-mobile@2x.jpg") no-repeat;
-    background-color: $sedona-blue;
-    min-height: 215px;
-
-  }
-}
-
-.header-menu::before {
+&::before {
   position: absolute;
   content: '';
   top: 145px;
@@ -36,7 +15,7 @@
   background-size: 90%;
 }
 
-.header-menu::after {
+&::after {
   display: block;
   position: absolute;
   bottom: -1px;
@@ -46,7 +25,13 @@
   background: url("../img/bg-intro-triangle-mobile.svg") no-repeat;
   z-index: 10;
 }
+}
 
+.header-menu--content {
+  min-height: 215px;
+  background: 50% 100% url("../../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-color: $sedona-blue;
+}
 
 .header-menu__logo {
   position: absolute;
@@ -87,6 +72,20 @@
   border: none;
   background: 50% 50% url("../img/icon-menu.svg") no-repeat;
   cursor: pointer;
+}
+
+@media #{$retina} {
+  .header-menu {
+    background: 60% 55px url("../img/bg-back-mobile@2x.jpg") no-repeat;
+    background-color: $sedona-blue;
+  }
+
+  .header-menu--content {
+    background: 55% 50% url("../img/bg-back-mobile@2x.jpg") no-repeat;
+    background-color: $sedona-blue;
+    min-height: 215px;
+
+  }
 }
 
 @media #{$tablet-width} {
