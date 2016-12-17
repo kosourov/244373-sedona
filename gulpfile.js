@@ -6,9 +6,11 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
+    .pipe(sourcemaps.init()) // карты
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
@@ -16,6 +18,7 @@ gulp.task("style", function() {
         "last 2 versions"
       ]})
     ]))
+    .pipe(sourcemaps.write()) // карты
     .pipe(gulp.dest("css"))
     .pipe(server.stream());
 });

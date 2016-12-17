@@ -1,0 +1,192 @@
+.video {
+  margin-bottom: 80px;
+}
+
+.video__header {
+  @include font-control(18px, 26px, 700);
+  padding-top: 25px;
+  display: block;
+  text-align: center;
+}
+
+.video__slogan {
+  @include font-control(14px, 24px, 300);
+  text-align: center;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 40px;
+}
+
+.video__src {
+  width: 320px;
+  height: 201px;
+}
+
+.video__control {
+  padding: 0 20px;
+  position: relative;
+
+}
+
+.video__scale {
+  position: absolute;
+  top: -45px;
+  left: 20px;
+  right: 20px;
+  padding: 0 20px;
+  min-height: 45px;
+  background-color: #000000;
+  opacity: 0.6;
+
+}
+
+.video__scale::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  height: 3px;
+  border: none;
+  background-color: #ffffff;
+  opacity: 0.7;
+}
+
+.video__scale::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  right: 20%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.video__buttons {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  background-color: #e6e6e6;
+}
+.video__btn {
+  width: 32px;
+  height: 40px;
+  display: flex;
+  cursor: pointer;
+
+  &--replay {
+    margin-left: 20px;
+  }
+
+  &--subtitle {
+    margin-left: auto;
+  }
+
+  &--fullscreen {
+    margin-left: 25px;
+    margin-right: 15px;
+  }
+
+}
+
+.video__btn svg {
+  margin: auto;
+}
+
+.video__btn path,
+.video__btn polygon {
+  fill: #5c6870;
+}
+
+@media #{$tablet-width} {
+  .video {
+    padding: 0 60px;
+    margin-bottom: 40px;
+  }
+
+  .video__header {
+    @include font-control(30px, 26px, 700);
+    padding-top: 70px;
+  }
+
+  .video__slogan {
+    padding: 15px 110px;
+    margin-bottom: 60px;
+  }
+
+  .video__src {
+    width: 648px;
+    min-height: 500px;
+    background-size: cover;
+  }
+
+  .video__scale {
+    min-height: 95px;
+    top: -95px;
+    left: 0;
+    right: 0;
+  }
+
+  .video__scale::before {
+    left: 90px;
+    right: 170px;
+  }
+
+  .video__scale::after {
+    left: 205px;
+    top: 45px;
+  }
+
+  .video__buttons {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: -90px;
+    min-height: 90px;
+    background-color: transparent;
+  }
+
+  .video__btn {
+    width: 32px;
+    height: 40px;
+    display: flex;
+
+    &--replay {
+      margin-left: 10px;
+    }
+  }
+
+  .video__btn path,
+  .video__btn polygon {
+    fill: #ffffff;
+  }
+}
+
+@media #{$desktop-width} {
+ .video {
+   padding: 0 200px;
+   margin-bottom: 85px;
+  }
+
+  .video__header {
+    @include font-control(30px, 26px, 700);
+    padding-top: 70px;
+  }
+
+  .video__slogan {
+    padding: 15px 180px;
+    margin-bottom: 60px;
+  }
+
+  .video__src {
+    width: 800px;
+    min-height: 500px;
+    background-size: cover;
+  }
+
+}

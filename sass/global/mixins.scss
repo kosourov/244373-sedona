@@ -1,0 +1,27 @@
+@mixin font-control($fontSize, $lineHeight, $fontWeight) {
+  font-family: "PT Sans", Arrow, sans-serif;
+  text-transform: uppercase;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+@mixin container() {
+  width: 320px;
+
+  @media #{$tablet-width} {
+    width: 768px;
+  }
+
+  @media #{$desktop-width} {
+    width: 1200px;
+  }
+}
+
+@mixin clearfix() {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

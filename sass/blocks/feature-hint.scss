@@ -1,0 +1,84 @@
+.feature-hint {
+  position: relative;
+  padding: 0;
+  padding-top: 29px;
+  padding-left: 70px;
+  padding-right: 52px;
+  float: left;
+}
+.feature-hint__img {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 5px;
+  right: 247px;
+  transform: scale(0.5);
+}
+
+.feature-hint__name {
+  @include font-control(18px, 26px, 700);
+  display: block;
+  margin-bottom: 15px;
+}
+
+.feature-hint__description {
+  @include font-control(14px, 21px, 300);
+}
+
+@media #{$tablet-width} {
+
+  .features__wrap {
+    display: flex;
+  }
+
+  .feature-hint {
+    padding: 0;
+    padding-top: 160px;
+    min-height: 170px;
+    width: 256px;
+    text-align: center;
+  }
+
+  .feature-hint--burger {
+    order: 2;
+  }
+
+  .feature-hint--house {
+    order: 1;
+  }
+
+  .feature-hint--gifts {
+    order: 3;
+  }
+
+  .feature-hint__img {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 60px;
+  right: 90px;
+  transform: scale(1);
+}
+
+  .feature-hint__name {
+  @include font-control(21px, 26px, 700);
+    margin-bottom: 20px;
+  }
+
+  .feature-hint__description {
+    display: block;
+    padding: 0 45px;
+  }
+}
+
+@media #{$desktop-width} {
+  .feature-hint {
+    width: 400px;
+  }
+
+  .feature-hint__img {
+    top: 60px;
+    right: 165px;
+
+  }
+}

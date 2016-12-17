@@ -1,0 +1,10 @@
+.hashtag {
+  @include font-control(21px, 26px, 700);
+  text-align: center;
+}
+
+@media #{$tablet-width} {
+  .hashtag {
+    padding-top: 45px;
+  }
+}

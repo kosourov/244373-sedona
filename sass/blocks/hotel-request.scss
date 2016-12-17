@@ -1,0 +1,63 @@
+.hotel-request {
+  padding: 0;
+  padding-top: 30px;
+  min-height: 615px;
+  margin-bottom: 30px;
+}
+
+.hotel-request__header {
+  @include font-control(21px, 26px, 700);
+  display: inline-block;
+  width: 320px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.hotel-request p {
+  @include font-control(14px, 24px, 300);
+  margin: 20px 30px;
+  text-align: center;
+}
+
+.hotel-request button {
+  margin: 0 20px;
+  margin-top: 10px;
+  margin-bottom: 45px;
+}
+
+@media #{$tablet-width} {
+  .hotel-request {
+    margin-bottom: 2px;
+  }
+
+  .hotel-request__header {
+    @include font-control(30px, 26px, 700);
+    padding-top: 25px;
+    margin-bottom: 10px;
+    width: 768px;
+  }
+
+  .hotel-request p {
+    padding: 0 150px;
+  }
+
+  .hotel-request button {
+    margin: 20px 154px;
+    margin-bottom: 60px;
+  }
+}
+
+@media #{$desktop-width} {
+  .hotel-request__header {
+    width: 1200px;
+  }
+
+  .hotel-request p {
+    padding: 0 370px;
+  }
+
+  .hotel-request button {
+    margin: 30px 370px;
+    margin-bottom: 60px;
+  }
+}

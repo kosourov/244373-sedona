@@ -1,0 +1,22 @@
+.page-footer {
+  display: flex;
+  width: 320px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media #{$tablet-width} {
+  .page-footer {
+    flex-direction: row;
+    width: auto;
+    justify-content: space-around;
+  }
+}
+
+@media #{$desktop-width} {
+  .page-footer {
+    margin-left: 130px;
+    margin-right: 40px;
+    justify-content: space-between;
+  }
+}

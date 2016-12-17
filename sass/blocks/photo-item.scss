@@ -1,0 +1,155 @@
+.photo {
+  height: 280px;
+}
+
+.photo-item {
+  position: relative;
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+
+.photo-item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  width: 320px;
+  height: 2px;
+  background-color: #e5e5e5;
+}
+
+.photo-item:last-child::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: -20px;
+  width: 320px;
+  height: 2px;
+  background-color: #e5e5e5;
+}
+
+.photo-item__description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo-item__header {
+  @include font-control(14px, 24px, 700);
+  margin: 0;
+  padding-top: 15px;
+  width: 280px;
+}
+
+.photo-item__author {
+  @include font-control(14px, 24px, 300);
+  margin: 0;
+  padding: 0;
+  width: 280px;
+  text-transform: none;
+}
+
+.photo-item__like {
+  margin: 0;
+  width: 280px;
+  padding-top: 10px;
+}
+
+.photo-item__like svg {
+  fill: #b2b2b2;
+}
+
+.photo-item__counter {
+  @include font-control(14px, 24px, 700);
+  padding-left: 10px;
+}
+
+@media #{$tablet-width} {
+  .photo-item {
+    margin: 0;
+    padding: 0;
+  }
+
+  .photo-item::before,
+  .photo-item:last-child::after {
+    display: none;
+  }
+
+  .photo-item__description {
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;
+    background-color: #f2f2f2;
+  }
+
+  .photo-item__header {
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-left: 25px;
+    width: 65%;
+    height: 40px;
+  }
+
+  .photo-item__author {
+    box-sizing: border-box;
+    width: 65%;
+    height: 40px;
+    padding-top: 0;
+    padding-left: 25px;
+  }
+
+  .photo-item__like {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    box-sizing: border-box;
+    text-align: right;
+    padding: 30px 0;
+    padding-right: 0px;
+    width: 35%;
+    height: 80px;
+  }
+
+  .photo-item__counter {
+    //display: inline-block;
+    padding: 0;
+    margin-left: 5px;
+    width: 55px;
+    text-align: left;
+  }
+
+  .photo-item__like svg {
+    //display: inline-block;
+    //vertical-align: top;
+    margin-left: 30px;
+    fill: #a9a9a9;
+  }
+}
+
+@media #{$desktop-width} {
+
+  .photo-item__description {
+    color: #ffffff;
+  }
+
+  .photo-item__header {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .photo-item__author {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .photo-item__like {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .photo-item__like svg {
+    fill: #ffffff;
+  }
+}

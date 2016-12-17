@@ -1,0 +1,224 @@
+.header-menu {
+  position: relative;
+  background: 60% 55px url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-color: $sedona-blue;
+  background-size: cover;
+  min-height: 445px;
+
+&::before {
+  position: absolute;
+  content: '';
+  top: 145px;
+  height: 280px;
+  width: 100%;
+  background: 45% 0 url("../img/text-sedona-index.svg") no-repeat;
+  background-size: 90%;
+}
+
+&::after {
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  content: '';
+  width: 320px;
+  height: 27px;
+  background: url("../img/bg-intro-triangle-mobile.svg") no-repeat;
+  z-index: 10;
+}
+}
+
+.header-menu--content {
+  min-height: 215px;
+  background: 50% 100% url("../../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-color: $sedona-blue;
+}
+
+.header-menu__logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -51px;
+}
+
+
+.header-menu--content::before {
+  display: none;
+}
+
+.header-menu__logo--content::after {
+  display: none;
+}
+
+.header-menu__logo--content::before {
+  content: '';
+  position: absolute;
+  top: 110px;
+  left: -65px;
+  height: 40px;
+  width: 230px;
+  background: 25% url("../img/text-sedona.svg") no-repeat;
+  background-size: cover;
+}
+
+.header-menu__toggle-wrap {
+  background-color: #ffffff;
+  text-align: right;
+  min-height: 55px;
+}
+
+.header-menu__toggle {
+  right: 0;
+  min-height: 55px;
+  width: 60px;
+  border: none;
+  background: 50% 50% url("../img/icon-menu.svg") no-repeat;
+  cursor: pointer;
+}
+
+@media #{$retina} {
+  .header-menu {
+    background: 60% 55px url("../img/bg-back-mobile@2x.jpg") no-repeat;
+    background-color: $sedona-blue;
+  }
+
+  .header-menu--content {
+    background: 55% 50% url("../img/bg-back-mobile@2x.jpg") no-repeat;
+    background-color: $sedona-blue;
+    min-height: 215px;
+
+  }
+}
+
+@media #{$tablet-width} {
+
+  .header-menu {
+    min-height: 510px;
+    background: 50% 0 url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    background-color: $sedona-blue;
+    background-size: cover;
+  }
+
+  .header-menu--content {
+    min-height: 480px;
+    background: 50% 100% url("../img/bg-back-tablet@1x.jpg") no-repeat;
+    background-color: $sedona-blue;
+    background-size: cover;
+  }
+
+  .header-menu::before {
+    height: 100%;
+    background-size: 60%;
+    top: 15%;
+    left: 2%;
+  }
+
+  @media #{$retina} {
+    .header-menu {
+      background: 50% 0 url("../img/bg-back-tablet@2x.jpg") no-repeat;
+      background-color: $sedona-blue;
+      background-size: cover;
+    }
+    .header-menu--content {
+      background: 50% 100% url("../img/bg-back-tablet@2x.jpg") no-repeat;
+      background-color: $sedona-blue;
+      background-size: cover;
+    }
+  }
+
+  .header-menu__logo {
+    position: absolute;
+    top: -60px;
+  }
+
+  .header-menu__logo::before {
+    top: 270px;
+    left: -170px;
+    height: 80px;
+    width: 460px;
+    background: url("../img/text-sedona.svg") no-repeat;
+  }
+
+  .header-menu__toggle {
+    display: none;
+  }
+
+  .header-menu__toggle-wrap {
+    display: none;
+  }
+
+  .header-menu::after {
+    width: 768px;
+    height: 57px;
+    bottom: 0px;
+    background-size: cover;
+    background: url("../img/bg-intro-triangle-tablet.svg") no-repeat;
+  }
+
+  .header-menu--content {
+    min-height: 290px;
+  }
+
+  .header-menu__logo--content::after {
+    display: none;
+  }
+
+  .header-menu__logo--content::before {
+    top: 150px;
+    left: -175px;
+  }
+
+}
+
+@media #{$desktop-width} {
+
+  .header-menu {
+    min-height: 520px;
+    background: 50% 0 url("../img/bg-back-desktop@1x.jpg") no-repeat;
+    background-color: $sedona-blue;
+    background-size: cover;
+  }
+
+  .header-menu--content {
+    min-height: 300px;
+    background: 50% 100% url("../img/bg-back-desktop@1x.jpg") no-repeat;
+    background-color: $sedona-blue;
+    background-size: cover;
+  }
+
+  .header-menu::after {
+    bottom: 0;
+    height: 57px;
+    width: 1200px;
+    background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
+  }
+
+    @media #{$retina} {
+      .header-menu {
+        background: 75% 0 url("../img/bg-back-desktop@2x.jpg") no-repeat;
+        background-color: $sedona-blue;
+        background-size: cover;
+      }
+
+      .header-menu--content {
+        min-height: 300px;
+        background: 50% 100% url("../img/bg-back-desktop@2x.jpg") no-repeat;
+        background-color: $sedona-blue;
+        background-size: cover;
+      }
+
+  }
+
+    .header-menu::before {
+      background-size: 38%;
+      left: 3%;
+    }
+
+   .header-menu__logo {
+     margin-left: -93px;
+    }
+
+    .header-menu__logo--content::before {
+      top: 160px;
+      left: -135px;
+    }
+
+}
