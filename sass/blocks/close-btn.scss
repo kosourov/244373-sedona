@@ -9,6 +9,7 @@
   border: 0;
   outline: 0;
   cursor: pointer;
+  z-index: 5;
 &::before {
   content: "";
   position: absolute;

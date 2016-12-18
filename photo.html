@@ -10,11 +10,11 @@
   <body>
       <div class="global-wrapper">
       <header class="page-header">
-        <nav class="main-navigation">
+        <nav class="main-navigation main-navigation--closed main-navigation--nojs">
           <ul class="main-navigation__list">
             <li class="main-navigation__item">
               <a href="index.html">Главная</a>
-              <button class="close-btn" type="button"></button>
+              <button class="close-btn button--nojs" type="button">Закрыть меню</button>
             </li>
             <li class="main-navigation__item">
               <a>Фото и видео</a>
@@ -36,7 +36,7 @@
             </a>
           </div>
           <div class="header-menu__toggle-wrap">
-            <button class="header-menu__toggle visually-hidden" type="button"></button>
+            <button class="open-btn button--nojs" type="button">Открыть меню</button>
           </div>
         </div>
       </header>
@@ -136,7 +136,7 @@
           <p class="video__slogan">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           <div class="video__src">
               <picture>
-                <img src="img/video-mobile@1x.jpg" alt="Video" >
+                <img class="video-shot" src="img/video-mobile@1x.jpg" alt="Video" >
               </picture>
           </div>
           <div class="video__control">
@@ -193,6 +193,6 @@
           </div>
       </footer>
     </div>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/mobilemenu.js" type="text/javascript"></script>
   </body>
 </html>
