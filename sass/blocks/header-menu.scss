@@ -166,6 +166,10 @@
     left: -175px;
   }
 
+  .open-btn {
+    display: none;
+}
+
 }
 
 @media #{$desktop-width} {
@@ -220,5 +224,9 @@
       top: 160px;
       left: -135px;
     }
+
+    .open-btn {
+      display: none;
+  }
 
 }

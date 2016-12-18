@@ -10,14 +10,14 @@
 <body>
   <div class="global-wrapper">
     <header class="page-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
             <a>Главная</a>
-            <button class="close-btn" type="button"></button>
+            <button class="close-btn button--nojs" type="button">Закрыть меню</button>
           </li>
           <li class="main-navigation__item">
-            <a href="photo.html">Фото и видео</a>
+            <a href="photo.htzml">Фото и видео</a>
           </li>
           <li class="main-navigation__item">
             <a href="form.html">Форма отзыва</a>
@@ -33,6 +33,7 @@
             <img src="img/logo-sedona-mobile.svg" alt="Sedona">
           </picture>
         </div>
+        <button class="open-btn button--nojs" type="button">Открыть меню</button>
         <div class="header-menu__toggle-wrap">
           <button class="header-menu__toggle visually-hidden" type="button"></button>
         </div>
@@ -143,5 +144,24 @@
       </div>
     </footer>
   </div>
+
+  <script>
+var navMain = document.querySelector('.main-navigation');
+var navOpen = document.querySelector('.open-btn');
+var navClose = document.querySelector('.close-btn');
+
+navMain.classList.remove('main-navigation--nojs');
+navOpen.classList.remove('button--nojs');
+navClose.classList.remove('button--nojs');
+
+navOpen.addEventListener('click', function() {
+    navMain.classList.remove('main-navigation--closed');
+    navMain.classList.add('main-navigation--opened');
+});
+navClose.addEventListener('click', function() {
+    navMain.classList.remove('main-navigation--opened');
+    navMain.classList.add('main-navigation--closed');
+  });
+</script>
 </body>
 </html>

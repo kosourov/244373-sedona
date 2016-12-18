@@ -9,6 +9,7 @@
 }
 
 .main-navigation__item {
+    position: relative;
   text-align: center;
   min-height: 55px;
   background-color: $sedona-blue;
@@ -43,13 +44,20 @@
   text-decoration: none;
 }
 
-.main-navigation__item button {
+.main-navigation--opened {
   display: block;
-  position: absolute;
-  width: 54px;
-  height: 54px;
-  top: 0;
-  right: 0;
+}
+
+.main-navigation--closed {
+  display: none;
+}
+
+.main-navigation--nojs {
+  display: block;
+}
+
+.button--nojs {
+  display: none;
 }
 
 @media #{$tablet-width} {
