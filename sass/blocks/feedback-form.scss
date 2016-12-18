@@ -134,17 +134,12 @@
   margin-bottom: 45px;
 }
 
-
-
 .feedback-form__contacts input[type="tel"] {
-  background: right 20px top 20px url("../img/icon-phone.svg") no-repeat,
-  linear-gradient(270deg, #e6e6e6 0%, #e6e6e6 60px, #f2f2f2 60px, #f2f2f2 100%);
+  background: right 20px top 20px url("../img/icon-phone.svg") no-repeat, linear-gradient(270deg, #e6e6e6 0%, #e6e6e6 60px, #f2f2f2 60px, #f2f2f2 100%);
 }
 
-
 .feedback-form__contacts input[type="email"] {
-  background: right 20px top 20px url("../img/icon-mail.svg") no-repeat,
-  linear-gradient(270deg, #e6e6e6 0%, #e6e6e6 60px, #f2f2f2 60px, #f2f2f2 100%);
+  background: right 20px top 20px url("../img/icon-mail.svg") no-repeat, linear-gradient(270deg, #e6e6e6 0%, #e6e6e6 60px, #f2f2f2 60px, #f2f2f2 100%);
 }
 
 .feedback-form__error-phone {
@@ -229,7 +224,6 @@ input[name="impression"]:checked + label:active::after {
   background-color: #a4a4a4;
 }
 
-
 .feedback-form__sights {
   min-height: 405px;
 }
@@ -238,7 +232,6 @@ input[name="impression"]:checked + label:active::after {
   @include font-control(18px, 26px, 700);
   text-align: center;
   margin-bottom: 30px;
-
 }
 
 .feedback-form__sights input {
@@ -316,9 +309,8 @@ input[name="sights-toggle"]:checked + label:active::after {
   text-transform: none;
 }
 
-
 .feedback-form input:hover,
-.feedback-form textarea:hover{
+.feedback-form textarea:hover {
   background-color: #e5e5e5;
 }
 
@@ -331,8 +323,6 @@ input[name="sights-toggle"]:checked + label:active::after {
 .feedback-form__notice {
   display: none;
 }
-
-
 @media #{$tablet-width} {
   .feedback-form {
     width: 648px;
@@ -356,8 +346,8 @@ input[name="sights-toggle"]:checked + label:active::after {
     content: '';
     width: 1px;
     height: 300px;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     background-color: #e5e5e5;
   }
 
@@ -414,8 +404,8 @@ input[name="sights-toggle"]:checked + label:active::after {
     margin-left: 28%;
   }
 
-  .feedback-form__contacts legend::before,
-  .feedback-form__contacts legend::after {
+  .feedback-form__contacts legend::after,
+  .feedback-form__contacts legend::before {
     display: block;
     position: absolute;
     content: '';
@@ -446,7 +436,6 @@ input[name="sights-toggle"]:checked + label:active::after {
     display: flex;
     flex-wrap: wrap;
     margin-left: 175px;
-
   }
 
   .feedback-form__sights legend {
@@ -456,8 +445,8 @@ input[name="sights-toggle"]:checked + label:active::after {
     width: 275px;
   }
 
-  .feedback-form__sights legend::before,
-  .feedback-form__sights legend::after {
+  .feedback-form__sights legend::after,
+  .feedback-form__sights legend::before {
     display: block;
     position: absolute;
     content: '';
@@ -474,10 +463,8 @@ input[name="sights-toggle"]:checked + label:active::after {
 
   .feedback-form__sights label {
     padding: 0;
-    margin: 0;
-    margin-bottom: 65px;
+    margin: 0 0 65px;
     width: 130px;
-
   }
 
   .feedback-form__sights label[for="devil-bridge"] {
@@ -511,8 +498,8 @@ input[name="sights-toggle"]:checked + label:active::after {
     margin-left: 29%;
   }
 
-  .feedback-form__message legend::before,
-  .feedback-form__message legend::after {
+  .feedback-form__message legend::after,
+  .feedback-form__message legend::before {
     display: block;
     position: absolute;
     content: '';
@@ -549,17 +536,14 @@ input[name="sights-toggle"]:checked + label:active::after {
   }
 
   .feedback-form__notice {
-  display: block;
-  float: right;
-  padding-top: 20px;
-  vertical-align: baseline;
-  @include font-control(14px, 26px, 300);
-  text-transform: uppercase;
+    display: block;
+    float: right;
+    padding-top: 20px;
+    vertical-align: baseline;
+    @include font-control(14px, 26px, 300);
+    text-transform: uppercase;
+  }
 }
-
-}
-
-
 @media #{$desktop-width} {
   .feedback-form {
     width: 960px;
@@ -570,7 +554,6 @@ input[name="sights-toggle"]:checked + label:active::after {
     width: 480px;
     min-height: 325px;
   }
-
 
   .feedback-form__impression legend {
     @include font-control(21px, 26px, 700);
@@ -585,7 +568,6 @@ input[name="sights-toggle"]:checked + label:active::after {
 
   .feedback-form__name {
     width: 480px;
-
   }
 
   .feedback-form__name legend {
@@ -630,9 +612,8 @@ input[name="sights-toggle"]:checked + label:active::after {
     margin-left: 35%;
   }
 
-
-  .feedback-form__contacts legend::before,
-  .feedback-form__contacts legend::after {
+  .feedback-form__contacts legend::after,
+  .feedback-form__contacts legend::before {
     width: 280px;
   }
 
@@ -646,6 +627,7 @@ input[name="sights-toggle"]:checked + label:active::after {
     padding: 0;
     width: 80px;
   }
+
   .feedback-form__contacts label:last-of-type {
     width: auto;
     margin-left: 7px;
@@ -658,7 +640,7 @@ input[name="sights-toggle"]:checked + label:active::after {
     width: 320px;
   }
 
-   .feedback-form__contacts input:first-of-type {
+  .feedback-form__contacts input:first-of-type {
     margin-right: 57px;
   }
 
@@ -691,9 +673,8 @@ input[name="sights-toggle"]:checked + label:active::after {
     width: 280px;
   }
 
-
-  .feedback-form__sights legend::before,
-  .feedback-form__sights legend::after {
+  .feedback-form__sights legend::after,
+  .feedback-form__sights legend::before {
     width: 280px;
     top: 25px;
     right: 680px;
@@ -716,8 +697,8 @@ input[name="sights-toggle"]:checked + label:active::after {
     margin-bottom: 55px;
   }
 
-  .feedback-form__message legend::before,
-  .feedback-form__message legend::after {
+  .feedback-form__message legend::after,
+  .feedback-form__message legend::before {
     width: 280px;
     top: 12px;
     right: 330px;
@@ -727,7 +708,7 @@ input[name="sights-toggle"]:checked + label:active::after {
     right: -345px;
   }
 
-    .feedback-form__error-phone {
+  .feedback-form__error-phone {
     top: 95px;
     left: 105px;
   }

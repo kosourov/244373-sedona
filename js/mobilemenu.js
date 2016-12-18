@@ -7,10 +7,10 @@ navOpen.classList.remove('button--nojs');
 navClose.classList.remove('button--nojs');
 
 navOpen.addEventListener('click', function() {
-    navMain.classList.remove('main-navigation--closed');
-    navMain.classList.add('main-navigation--opened');
+  navMain.classList.remove('main-navigation--closed');
+  navMain.classList.add('main-navigation--opened');
 });
 navClose.addEventListener('click', function() {
-    navMain.classList.remove('main-navigation--opened');
-    navMain.classList.add('main-navigation--closed');
-  });
+  navMain.classList.remove('main-navigation--opened');
+  navMain.classList.add('main-navigation--closed');
+});

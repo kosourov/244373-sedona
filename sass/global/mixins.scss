@@ -5,19 +5,15 @@
   line-height: $lineHeight;
   font-weight: $fontWeight;
 }
-
 @mixin container() {
   width: 320px;
-
   @media #{$tablet-width} {
     width: 768px;
   }
-
   @media #{$desktop-width} {
     width: 1200px;
   }
 }
-
 @mixin clearfix() {
   &::after {
     content: '';

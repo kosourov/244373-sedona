@@ -7,7 +7,6 @@
   cursor: pointer;
 }
 
-
 .btn:hover {
   background-color: $sedona-blue-hover;
 }
@@ -45,11 +44,11 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 @keyframes shining {
   from {
     background-color: #5496bd;
   }
+
   to {
     background-color: #3e84ae;
   }
@@ -60,7 +59,6 @@
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
-
 @media #{$tablet-width} {
   .btn--send-feedback {
     width: 325px;
@@ -80,7 +78,6 @@
     width: 265px;
   }
 }
-
 @media #{$desktop-width} {
   .btn--send-feedback {
     width: 480px;
@@ -89,5 +86,4 @@
   .btn--popup-success {
     width: 455px;
   }
-
 }

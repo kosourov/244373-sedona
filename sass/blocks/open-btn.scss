@@ -9,15 +9,15 @@
   outline: 0;
   cursor: pointer;
   background-color: #ffffff;
+
   &::before {
     content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 23px;
-  height: 4px;
-  background-color: $sedona-blue;
-  box-shadow: 0 9px 0 0 $sedona-blue,
-              0 18px 0 0 $sedona-blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 4px;
+    background-color: $sedona-blue;
+    box-shadow: 0 9px 0 0 $sedona-blue, 0 18px 0 0 $sedona-blue;
   }
 }

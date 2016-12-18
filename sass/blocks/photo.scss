@@ -1,11 +1,8 @@
 .photo {
   padding: 0;
   margin: 0;
-
 }
-
 @media #{$tablet-width} {
-
   .photo {
     height: 265px;
   }
@@ -13,7 +10,6 @@
   .photo img {
     width: 324px;
     height: 265px;
-
   }
 
   .photo--fullscreen {
@@ -25,9 +21,7 @@
     height: 400px;
   }
 }
-
 @media #{$desktop-width} {
-
   .photo {
     height: 186px;
   }
