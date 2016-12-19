@@ -4,7 +4,6 @@
   justify-content: space-between;
   flex-direction: column;
 }
-
 @media #{$tablet-width} {
   .page-footer {
     flex-direction: row;
@@ -12,7 +11,6 @@
     justify-content: space-around;
   }
 }
-
 @media #{$desktop-width} {
   .page-footer {
     margin-left: 130px;

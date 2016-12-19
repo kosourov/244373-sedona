@@ -26,7 +26,6 @@
 .video__control {
   padding: 0 20px;
   position: relative;
-
 }
 
 .video__scale {
@@ -38,7 +37,6 @@
   min-height: 45px;
   background-color: #000000;
   opacity: 0.6;
-
 }
 
 .video__scale::before {
@@ -73,6 +71,7 @@
   min-height: 60px;
   background-color: #e6e6e6;
 }
+
 .video__btn {
   width: 32px;
   height: 40px;
@@ -91,7 +90,6 @@
     margin-left: 25px;
     margin-right: 15px;
   }
-
 }
 
 .video__btn svg {
@@ -102,7 +100,6 @@
 .video__btn polygon {
   fill: #5c6870;
 }
-
 @media #{$tablet-width} {
   .video {
     padding: 0 60px;
@@ -166,11 +163,10 @@
     fill: #ffffff;
   }
 }
-
 @media #{$desktop-width} {
- .video {
-   padding: 0 200px;
-   margin-bottom: 85px;
+  .video {
+    padding: 0 200px;
+    margin-bottom: 85px;
   }
 
   .video__header {
@@ -188,5 +184,4 @@
     min-height: 500px;
     background-size: cover;
   }
-
 }

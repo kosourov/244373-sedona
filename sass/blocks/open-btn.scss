@@ -1,0 +1,23 @@
+.open-btn {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 23px;
+  height: 22px;
+  font-size: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background-color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 4px;
+    background-color: $sedona-blue;
+    box-shadow: 0 9px 0 0 $sedona-blue, 0 18px 0 0 $sedona-blue;
+  }
+}

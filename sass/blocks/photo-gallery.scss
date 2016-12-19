@@ -4,15 +4,28 @@
   padding: 0 20px;
 }
 
+.video-shot {
+  width: 320px;
+  height: 195px;
+}
 @media #{$tablet-width} {
   .photo-gallery {
     padding: 0 60px;
     margin-top: 70px;
   }
-}
 
+  .video-shot {
+    width: 650px;
+    height: 500px;
+  }
+}
 @media #{$desktop-width} {
   .photo-gallery {
     padding: 0;
+  }
+
+  .video-shot {
+    width: 800px;
+    height: 500px;
   }
 }

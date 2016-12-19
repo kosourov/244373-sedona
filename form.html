@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,14 +8,15 @@
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 </head>
+
 <body>
   <div class="global-wrapper">
     <header class="page-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
             <a href="index.html">Главная</a>
-            <button class="close-btn" type="button"></button>
+            <button class="close-btn button--nojs" type="button">Закрыть меню</button>
           </li>
           <li class="main-navigation__item">
             <a href="photo.html">Фото и видео</a>
@@ -31,12 +33,13 @@
         <div class="header-menu__logo  header-menu__logo--content">
           <a href="index.html">
             <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.png">
               <img src="img/logo-sedona-mobile.svg" alt="Sedona">
             </picture>
           </a>
         </div>
         <div class="header-menu__toggle-wrap">
-          <button class="header-menu__toggle visually-hidden" type="button"></button>
+          <button class="open-btn button--nojs" type="button">Открыть меню</button>
         </div>
       </div>
     </header>
@@ -135,5 +138,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/mobilemenu.js" type="text/javascript"></script>
 </body>
+
 </html>

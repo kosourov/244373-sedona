@@ -1,17 +1,45 @@
-.feature-hint {
+.feature-hint--house {
   position: relative;
-  padding: 0;
-  padding-top: 29px;
-  padding-left: 70px;
-  padding-right: 52px;
+  padding: 35px 52px 0 72px;
   float: left;
 }
-.feature-hint__img {
+
+.feature-hint--gifts {
+  position: relative;
+  padding: 29px 52px 0 72px;
+  float: left;
+}
+
+.feature-hint--burger {
+  position: relative;
+  padding: 25px 52px 0 72px;
+  float: left;
+}
+
+.feature-hint__img--house {
   position: absolute;
   margin: 0;
   padding: 0;
-  top: 5px;
-  right: 247px;
+  top: 8px;
+  right: 240px;
+  transform: scale(0.5);
+}
+
+.feature-hint__img--gifts {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: -2px;
+  right: 245px;
+  transform: scale(0.5);
+}
+
+.feature-hint__img--burger {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 4px;
+  right: 240px;
   transform: scale(0.5);
 }
 
@@ -24,16 +52,13 @@
 .feature-hint__description {
   @include font-control(14px, 21px, 300);
 }
-
 @media #{$tablet-width} {
-
   .features__wrap {
     display: flex;
   }
 
   .feature-hint {
-    padding: 0;
-    padding-top: 160px;
+    padding: 160px 0 0;
     min-height: 170px;
     width: 256px;
     text-align: center;
@@ -51,17 +76,19 @@
     order: 3;
   }
 
-  .feature-hint__img {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  top: 60px;
-  right: 90px;
-  transform: scale(1);
-}
+  .feature-hint__img--burger,
+  .feature-hint__img--gifts,
+  .feature-hint__img--house {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 60px;
+    right: 90px;
+    transform: scale(1);
+  }
 
   .feature-hint__name {
-  @include font-control(21px, 26px, 700);
+    @include font-control(21px, 26px, 700);
     margin-bottom: 20px;
   }
 
@@ -70,15 +97,15 @@
     padding: 0 45px;
   }
 }
-
 @media #{$desktop-width} {
   .feature-hint {
     width: 400px;
   }
 
-  .feature-hint__img {
+  .feature-hint__img--burger,
+  .feature-hint__img--gifts,
+  .feature-hint__img--house {
     top: 60px;
     right: 165px;
-
   }
 }
