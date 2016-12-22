@@ -43,6 +43,7 @@
   color: #ffffff;
   text-decoration: none;
 }
+
 @media #{$mobile-width} {
   .main-navigation--opened {
     display: block;
@@ -60,6 +61,7 @@
     display: none;
   }
 }
+
 @media #{$tablet-width} {
   .main-navigation {
     padding: 0;
@@ -121,6 +123,7 @@
     display: none;
   }
 }
+
 @media #{$tablet-width} {
   .main-navigation__item a,
   .main-navigation__item a[href] {

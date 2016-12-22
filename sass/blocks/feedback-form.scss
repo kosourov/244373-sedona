@@ -323,6 +323,7 @@ input[name="sights-toggle"]:checked + label:active::after {
 .feedback-form__notice {
   display: none;
 }
+
 @media #{$tablet-width} {
   .feedback-form {
     width: 648px;
@@ -544,6 +545,7 @@ input[name="sights-toggle"]:checked + label:active::after {
     text-transform: uppercase;
   }
 }
+
 @media #{$desktop-width} {
   .feedback-form {
     width: 960px;

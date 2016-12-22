@@ -11,6 +11,7 @@ navOpen.addEventListener('click', function() {
   navMain.classList.add('main-navigation--opened');
   navOpen.classList.add('button--nojs');
 });
+
 navClose.addEventListener('click', function() {
   navMain.classList.remove('main-navigation--opened');
   navMain.classList.add('main-navigation--closed');

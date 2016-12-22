@@ -100,6 +100,7 @@
 .video__btn polygon {
   fill: #5c6870;
 }
+
 @media #{$tablet-width} {
   .video {
     padding: 0 60px;
@@ -163,6 +164,7 @@
     fill: #ffffff;
   }
 }
+
 @media #{$desktop-width} {
   .video {
     padding: 0 200px;
