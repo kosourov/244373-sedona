@@ -72,6 +72,7 @@
   background: 50% 50% url("../img/icon-menu.svg") no-repeat;
   cursor: pointer;
 }
+
 @media #{$retina} {
   .header-menu {
     background: 60% 55px url("../img/bg-back-mobile@2x.jpg") no-repeat;
@@ -84,6 +85,7 @@
     min-height: 215px;
   }
 }
+
 @media #{$tablet-width} {
   .header-menu {
     min-height: 510px;
@@ -105,6 +107,7 @@
     top: 15%;
     left: 2%;
   }
+
   @media #{$retina} {
     .header-menu {
       background: 50% 0 url("../img/bg-back-tablet@2x.jpg") no-repeat;
@@ -165,6 +168,7 @@
     display: none;
   }
 }
+
 @media #{$desktop-width} {
   .header-menu {
     min-height: 520px;
@@ -186,6 +190,7 @@
     width: 1200px;
     background: url("../img/bg-intro-triangle-desktop.svg") no-repeat;
   }
+
   @media #{$retina} {
     .header-menu {
       background: 75% 0 url("../img/bg-back-desktop@2x.jpg") no-repeat;

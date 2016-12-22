@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
 }
+
 @media #{$tablet-width} {
   .photo {
     height: 265px;
@@ -21,6 +22,7 @@
     height: 400px;
   }
 }
+
 @media #{$desktop-width} {
   .photo {
     height: 186px;
