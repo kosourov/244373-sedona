@@ -66,6 +66,7 @@
   @include font-control(14px, 24px, 700);
   padding-left: 10px;
 }
+
 @media #{$tablet-width} {
   .photo-item {
     margin: 0;
@@ -126,6 +127,7 @@
     fill: #a9a9a9;
   }
 }
+
 @media #{$desktop-width} {
   .photo-item__description {
     color: #ffffff;

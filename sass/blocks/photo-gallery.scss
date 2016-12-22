@@ -8,6 +8,7 @@
   width: 320px;
   height: 195px;
 }
+
 @media #{$tablet-width} {
   .photo-gallery {
     padding: 0 60px;
@@ -19,6 +20,7 @@
     height: 500px;
   }
 }
+
 @media #{$desktop-width} {
   .photo-gallery {
     padding: 0;

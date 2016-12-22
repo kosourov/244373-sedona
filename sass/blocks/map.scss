@@ -27,7 +27,6 @@
       @media #{$retina} {
         background-image: url("../img/bg-map-tablet@2x.jpg");
       }
-
     }
 
     @media #{$desktop-width} {
@@ -36,7 +35,6 @@
       @media #{$retina} {
         background-image: url("../img/bg-map-desktop@2x.jpg");
       }
-
     }
   }
 }

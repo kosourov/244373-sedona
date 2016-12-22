@@ -52,6 +52,7 @@
 .feature-hint__description {
   @include font-control(14px, 21px, 300);
 }
+
 @media #{$tablet-width} {
   .features__wrap {
     display: flex;
@@ -97,6 +98,7 @@
     padding: 0 45px;
   }
 }
+
 @media #{$desktop-width} {
   .feature-hint {
     width: 400px;

@@ -22,13 +22,13 @@ gulp.task("style", function() {
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer({
-        browsers: [
-          "last 2 versions"
-        ]
-      })
-    ]),
-    mqpacker({
+        autoprefixer({
+          browsers: [
+            "last 2 versions"
+          ]
+        })
+      ]),
+      mqpacker({
         sort: true
       }))
     .pipe(sourcemaps.write()) // карты

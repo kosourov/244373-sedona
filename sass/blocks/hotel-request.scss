@@ -21,6 +21,7 @@
 .hotel-request button {
   margin: 10px 20px 45px;
 }
+
 @media #{$tablet-width} {
   .hotel-request {
     margin-bottom: 2px;
@@ -41,6 +42,7 @@
     margin: 20px 154px 60px;
   }
 }
+
 @media #{$desktop-width} {
   .hotel-request__header {
     width: 1200px;
