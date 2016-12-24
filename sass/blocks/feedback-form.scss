@@ -443,7 +443,6 @@ input[name="sights-toggle"]:checked + label:active::after {
     position: relative;
     @include font-control(21px, 26px, 700);
     padding: 25px 190px;
-    width: 275px;
   }
 
   .feedback-form__sights legend::after,
@@ -672,14 +671,13 @@ input[name="sights-toggle"]:checked + label:active::after {
     padding: 0 340px;
     text-align: center;
     margin-bottom: 60px;
-    width: 280px;
   }
 
   .feedback-form__sights legend::after,
   .feedback-form__sights legend::before {
-    width: 280px;
     top: 25px;
     right: 680px;
+    width: 280px;
   }
 
   .feedback-form__sights legend::after {
