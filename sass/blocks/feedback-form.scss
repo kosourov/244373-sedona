@@ -314,8 +314,8 @@ input[name="sights-toggle"]:checked + label:active::after {
   background-color: #e5e5e5;
 }
 
-.feedback-form input:active,
-.feedback-form textarea:active {
+.feedback-form input:focus,
+.feedback-form textarea:focus {
   background-color: #ffffff;
   outline: 3px solid #e5e5e5;
 }
