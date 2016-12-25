@@ -32,6 +32,27 @@ gulp.task("style", function() {
         sort: true
       }))
     .pipe(sourcemaps.write()) // карты
+    .pipe(rename("style.css"))
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
+});
+
+gulp.task("stylemin", function() {
+  gulp.src("sass/style.scss")
+    .pipe(sourcemaps.init()) // карты
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([
+        autoprefixer({
+          browsers: [
+            "last 2 versions"
+          ]
+        })
+      ]),
+      mqpacker({
+        sort: true
+      }))
+    .pipe(sourcemaps.write()) // карты
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
@@ -92,5 +113,5 @@ gulp.task("clean", function() {
 
 gulp.task("build", function(fn) {
   run("clean", "copy",
-    "style", "images", "symbols", fn);
+    "style", "stylemin", "images", "symbols", fn);
 });
